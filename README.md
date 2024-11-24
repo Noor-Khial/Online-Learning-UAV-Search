@@ -80,7 +80,7 @@ python exp3.py
 Alternatively, you can run the Context Exp3 test using:
 
 ```bash
-python context_exp3.py
+python cexp3.py
 ```
 
 ## Configurations
@@ -92,7 +92,7 @@ You can modify key parameters such as:
 - **Exploration rate (`gamma`)**
 - **Number of contexts (`num_contexts`)**
 
-These parameters are configurable within the respective script files (`exp3.py`, `exp4.py`, `context_exp3.py`).
+These parameters are configurable within the respective script files (`exp3.py`, `exp4.py`, `cexp3.py`).
 
 ## Results
 
