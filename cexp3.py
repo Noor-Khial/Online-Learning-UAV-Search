@@ -72,7 +72,7 @@ class ContextExp3:
             f.write(m + '\n')
 
     @staticmethod
-    def simple_test(numRounds=200000, gamma=None, target_updates=None):
+    def simple_test(numRounds=40000, gamma=None, target_updates=None):
         """Run a simple test of the ContextExp3 algorithm with customizable parameters."""
         numContexts = 36  # Example number of contexts
         numActions = 8  # Number of actions
@@ -81,7 +81,6 @@ class ContextExp3:
         if gamma is None:
             gamma = math.sqrt(math.log(numRounds) / numRounds * numActions)
         context_exp3 = ContextExp3(numContexts, numActions, numRounds, gamma)
-        print(gamma)
         # Set target updates if provided
         if target_updates is None:
             target_updates = {

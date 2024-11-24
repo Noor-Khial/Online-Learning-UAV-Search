@@ -31,8 +31,8 @@ def regretWeightsGraph(filename, title, u):
    lines = [[eval(x.split(": ")[1]) for x in line.split('\t')] for line in lines]
    data = transpose(lines)
 
-   regret = numpy.array(data[0]) #/10000
-   #regretBound = numpy.array(data[1]) #/10000
+   regret = numpy.array(data[0]) /10000
+   #regretBound = numpy.array(data[1]) /10000
    weights = numpy.array(transpose(data[1]))
    xs = numpy.array(list(range(len(data[0]))))
 
@@ -42,7 +42,7 @@ def regretWeightsGraph(filename, title, u):
       plt.ylabel('Cumulative Regret  \n ($\mathregular{x10^{4}}$)')
       #plt.plot(xs, regretBound, label = "Upper Bound", color = "navy", linewidth=2)
       plt.plot(xs, regret, label = "Regret" , color = "orchid", linewidth=2)
-   
+      plt.savefig('FIGs/exp4-test-regret')
       #ax1.scatter(xs,regret,marker='o',linewidths=3)
       #ax1.scatter(xs,regretBound,marker='o',linewidths=3)
       plt.xlabel('Time slot ($\mathregular{x10^{3}}$)')
@@ -62,6 +62,7 @@ def regretWeightsGraph(filename, title, u):
          s= s+1
       
             #ax2.scatter(xs,w,marker='o')
+      plt.savefig('FIGs/exp4-test-weights')
    
       plt.xlabel('Time slot ($\mathregular{x10^{3}}$)')
       plt.legend()
@@ -113,10 +114,7 @@ def regretWeightsGraph(filename, title, u):
       plt.legend()
       plt.show()
 
-
-#regretWeightsGraph('M3.txt', "", 0)
-#regretWeightsGraph('M1.txt', "", 0)
-regretWeightsGraph('exp3/alg/results/exp4|E|=2.txt', "", 1)
+regretWeightsGraph('weights/exp4-test.txt', "", 1)
 
 
 

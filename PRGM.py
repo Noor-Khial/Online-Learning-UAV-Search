@@ -7,6 +7,7 @@ of UAV path planning or similar applications.
 """
 #Note: we have used a generated leader trajectory and stored them in the PRGM.txt file. 
 #This trajectory is used for all the simulations, to have a fair comparison. 
+
 import math
 import numpy as np
 from matplotlib import pyplot as plt

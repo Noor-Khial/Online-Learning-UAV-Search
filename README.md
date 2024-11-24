@@ -96,4 +96,4 @@ These parameters are configurable within the respective script files (`exp3.py`,
 
 ## Results
 
-Logs for regret and weights are stored in the `results` directory, with separate files for each experiment:
+Logs for regret and weights are stored in the `weights` directory, with separate files for each simple test experiment. The plots for the results are stored in FIGs.

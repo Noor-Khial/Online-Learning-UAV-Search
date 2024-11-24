@@ -71,7 +71,7 @@ num_actions = 8
 num_experts = 2
 eta = 0.0001
 num_contexts = 36  # Number of contexts
-num_rounds = 200000  # Number of rounds
+num_rounds = 50000  # Number of rounds
 
 # Initialize the Exp4 algorithm
 exp4 = Exp4(num_actions, num_experts, eta, num_contexts, num_rounds)
