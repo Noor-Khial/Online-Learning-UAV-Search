@@ -1,5 +1,3 @@
-# README: Experiments for the Paper "Both Worlds Path Planning"
-
 This file describes the experiments conducted for the paper, based on the methodologies detailed in:  
 **Khial, Noor, Mhaisen, Naram, Mabrok, Mohamed, and Mohamed, Amr.**  
 _"An Online Learning Framework for UAV Search Mission in Adversarial Environments."_  
